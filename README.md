@@ -12,6 +12,9 @@ Every _Regular Expression_ can be written as a FA, and vice versa.
 ```
 r := new(regexp)
 
+// will check the input for 3 occurrencies of the range 'a-c' no matter the order
+// will check the input for 1 occurrency of the letter 'o'
+// will check the input for 3 occurencies of the letter 'r'
 err := r.addState(regexpopts{
     exp:        "a-c",
     recurrency: 3,
