@@ -1,11 +1,13 @@
-package main
+package finiteautomata
 
 import (
 	"errors"
 	"strings"
 )
 
-const alphabet string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const lowercaseAlphabet string = "abcdefghijklmnopqrstuvwxyz"
+const uppercaseAlphabet string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const alphabet string = lowercaseAlphabet + uppercaseAlphabet
 
 type exp string
 
